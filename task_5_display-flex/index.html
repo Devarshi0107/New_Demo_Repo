@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>task_5 Display-flex</title>
+    
+</head>
+<style>
+  
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .size-6 {
+      width: 30px;  
+      height: 30px; 
+    }
+    img{
+      width: 30px;
+      height: 30px;      
+    }
+    button{
+      background-color: #30b383;
+      font-size: 22px;
+      font-weight: 600;
+      color: white;
+      border: 0px;
+      border-radius: 10px;
+      margin: 3px 12px ;
+      padding: 8px 22px;
+    }
+    button:hover{
+      background-color: darkgreen;
+    }
+    .parent-div{
+    display: flex;
+    background-color: silver;
+}
+.parent-div>div{
+    text-align: center;
+   
+    padding: 8px 12px;
+    font-size: 20px;
+    
+}
+.parent-div>div:hover{
+   background-color: #938d8d;
+    
+}
+#no-hover:hover{
+  background-color:silver ;
+}
+
+  </style>
+  
+<body>  
+    <div class="parent-div">
+        <div>  <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          
+        </svg></a>  </div>
+        
+
+        <div>  <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        </a>  </div>
+        <div> <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+        </svg>
+        </a>   </div>
+        <div>
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
+          </svg>
+          </a>
+        </div>
+        <div>
+          <a href=""><img src="https://uxwing.com/wp-content/themes/uxwing/download/arts-graphic-shapes/color-adjust-icon.png" alt=""></a>
+        </div>
+        
+          <button>Run  ></button>
+        
+        <div id="no-hover" style="flex-grow: 1;"></div>
+        <div id="no-hover" style="margin-top: 12px; font-size: 17px ;">
+          Result Size: 753 x 575
+        </div>
+        
+          <button>Get your own website</button>
+        
+    </div>
+</body>
+</html>
