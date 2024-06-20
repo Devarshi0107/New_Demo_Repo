@@ -20,9 +20,8 @@ git branch -d  name //use to delete the existing branch but wwith merge reminder
 git brnach -D name // used to delete the existin gbranch with forcefully
 
 // these are use too delet ehte branch remotely
-git push  -d origin name
-git push  -D origin name
-
+git push origin -d name
+git push origin -D name
 
 
 //merge branches two ways
