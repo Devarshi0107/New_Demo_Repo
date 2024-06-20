@@ -1,0 +1,122 @@
+18-6-24
+------------------
+traccepath
+nmcli con show --active
+nmcli con add con-name henil type ethernet ipv4.address 10.0.0.1/8 //for adding device
+, but no active devic
+nmcli con up henil   //fro activating connecction
+nmcli con del henil	//for ddeleting the connection
+
+cat /proc/filesystems 	//used to show filesystems
+mount	//show filesystems where mount
+cat /etc/fstab
+findmnt	//tree heirachhy of moountedd system
+findmmnt -t ext4	//shoue ext4 type mounted filesystemm
+lsblk 	//give information  about blocks ,sda is total size allcoated of os
+	//sda1,... another show block information of size
+	//sdb stand for pendrive type external source size
+du
+ls -l /media	//
+ls -l /dev | grep sd
+sudo mount /dev/sdb1 /media/YES
+sudo umount /dev/sdb1	//for unmounting pendrive
+
+
+
+20-6-24
+--------------------
+
+echon $HOME	//environment variable
+echo $path	//show excutabel fies path
+echo $user 	//show logged user name
+printenv	//show all environment
+export _NAME="devarshi Maurya"
+echo $NAME //show devarshhi maurya
+unset _NAME	///delete devarshhi mauya
+///////makign shell script///////
+touch script.sh
+.....now inn script.sh file>>>
+( give permition to executable format )
+echo $USER
+ehco "present working directory : $PWD"
+eccho "folde content :"
+ls -l
+......end...........
+./script.sh	//for running the file
+
+making variabel in  sshell script::
+VAR_NAME="dev"
+VAR_VALUE_STR="109"
+VAR_VALUE=100
+for access variable use $
+echo  "NAME : $VAR_NAME"		//give blank if value is not declare dotherwise give value
+VAR_NAME="new suer"	//do not chnage ecause it is only red only variable
+//for comment #
+read VAR_NAME	//work as cin as string type input
+
+command linne argument
+--using command line argument in shell script--
+--special variable--:
+echo $0-used too print current file name
+echo $1,$2:	./script.sh henil shell	//used to print argumennt
+
+echo "how many argument are passseed : $#"	//used ot shw no of argument passed
+ex : ./script.sh "dev shelll maurya"
+
+echo $* or $@	//used to peint all argument in string format
+eccho "PRocess Id : $$"	//used to print process id
+
+
+activity :name ,age ,laptop take as cli and print in shell schript as echo
+
+
+---array ------
+arr[0]="dev"
+arr[1]="e"
+arr[2]="v"
+
+echo "1st : ${arr[*]}"
+arr[1]="w"
+echo "2nd : ${arr[0]}"
+
+---arithmentic operation---
+VAR_A=5
+VAR_B=10
+echo "sum is : $((VAR_A+VAR_B))" //use double  bracket
+..for relational operator , operatorss are:
+> -gt 
+< -lt
+== -eq
+!= -ne
+>= -ge,
+<= -le
+exxX: echo "VAR_A > VAR_B : $(($VAR_A -gt VAR_B))"
+
+if [$VAR_A -gt $VAR_B]
+then echo "TRUE"
+elsif [ ... ]
+then
+echo../
+else
+echo "false"
+fi
+
+//logicclal not used as ! [[ ...]]
+//logical or(-o) 
+//logical and (-a)
+//note using of this logical syntax is iportant
+
+//string operator
+# =,!=,-z for string length , -n string length but his is set as 0, <var> to check string is empty
+
+//file test operators 
+# -b is it block specific or not , -c for character special , -d chekcing for directory , -f for noral file , 
+-g for chekcing gropup accesses have or not , -u for check user , -r for check readable , -x ,-w , -s for check file size is >0, -e check existing of file or directory
+
+ 
+activity:
+command line argumenr
+take path
+check norma file if yes check read , then w , the x in  ,directory
+
+
